@@ -108,5 +108,35 @@
     "id": "PR-0410",
     "tube": "S3014",
     "message": "Stand at the center of a major hallway intersection for ten seconds with your hands behind your back. Turn 90 degrees to your left and walk away silently."
+  },
+  {
+    "id": "PR-0501",
+    "tube": "N9201",
+    "message": "Approach Table FB04. Silently place a folded paper crane on the table edge, offer Vanta a single solemn nod, and walk away without speaking."
+  },
+  {
+    "id": "PR-0502",
+    "tube": "S3014",
+    "message": "Locate Vanta at Table FB04. Frame their display with your fingers for four seconds, bow silently at a 45-degree angle, and exit the aisle."
+  },
+  {
+    "id": "PR-0503",
+    "tube": "E8812",
+    "message": "Stand before Table FB04 for six seconds with your hands behind your back. Silently leave a small wrapped candy on the counter, then step backward three paces before turning."
+  },
+  {
+    "id": "PR-0504",
+    "tube": "W4012",
+    "message": "Navigate to Table FC01. Offer Ryan a silent two-finger salute, admire a piece of artwork for five seconds, and depart toward the right aisle."
+  },
+  {
+    "id": "PR-0505",
+    "tube": "M9901",
+    "message": "Approach Table FC01. Gently place a clean sticky note or bookmark on the counter, give Ryan a crisp bow, and leave in complete silence."
+  },
+  {
+    "id": "PR-0506",
+    "tube": "K1105",
+    "message": "Visit Ryan at Table FC01. Silently tap your chest over your heart twice, point gently to their display banner, offer a thumbs-up, and vanish into the crowd."
   }
 ]
