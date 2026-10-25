@@ -1,0 +1,18 @@
+[
+  {
+    "id": "PR-0104",
+    "tube": "N9201",
+    "message": "Visit [Artist Name]'s booth and tell them a tale of how the ocean looks beautiful. Depart immediately without waiting for their response."
+  },
+  {
+    "id": "PR-0219",
+    "tube": "N9201",
+    "message": "Locate an attendee carrying a badge or wearing red ribbons. Present them with a polite high-five and proclaim: 'The Will of the Prescript has been acknowledged.'"
+  },
+  {
+    "id": "PR-0342",
+    "tube": "S3014",
+    "message": "Find a cosplayer representing the City. Bow respectfully at a 45-degree angle, hand them a small wrapped candy, and say: 'The Weaver sends their regards.'"
+  }
+]
+

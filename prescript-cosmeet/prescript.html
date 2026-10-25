@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>The Will of The Prescript</title>
+  <!-- Google Fonts with fallbacks for offline convention use -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="kiosk-container">
+    
+    <!-- Top Bar -->
+    <header class="index-header">
+      <div class="header-mark">
+        <span class="index-title">The Will of The Prescript</span>
+      </div>
+    </header>
+
+    <!-- STEP 1: Idle Screen with "Deliver" button -->
+    <section id="screen-deliver" class="screen-view active">
+      <div class="deliver-content">
+        <div class="loom-spindle">
+          <svg class="loom-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+            <circle cx="50" cy="50" r="42" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+            <circle cx="50" cy="50" r="30" stroke-width="2"/>
+            <line x1="50" y1="8" x2="50" y2="92" stroke-width="1" opacity="0.5"/>
+            <line x1="8" y1="50" x2="92" y2="50" stroke-width="1" opacity="0.5"/>
+            <polygon points="50,26 68,50 50,74 32,50" stroke-width="1.5" fill="none"/>
+            <circle cx="50" cy="50" r="4" fill="currentColor"/>
+          </svg>
+        </div>
+        
+        <button id="btn-deliver" class="btn-deliver" type="button" aria-label="Deliver Prescript">
+          <span class="btn-inner">
+            <span class="btn-thread-border"></span>
+            <span class="btn-text">DELIVER</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- STEP 2: Tube Transmission Screen -->
+    <section id="screen-tube" class="screen-view hidden">
+      <div class="tube-display-card">
+        <div class="tube-capsule">
+          <div class="tube-icon">
+            <svg viewBox="0 0 40 80" width="36" height="72" fill="none" stroke="currentColor">
+              <rect x="6" y="10" width="28" height="60" rx="14" stroke-width="2"/>
+              <line x1="6" y1="26" x2="34" y2="26" stroke-width="1.5" stroke-dasharray="2 2"/>
+              <line x1="6" y1="54" x2="34" y2="54" stroke-width="1.5" stroke-dasharray="2 2"/>
+              <circle cx="20" cy="40" r="5" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="tube-meta">
+            <span class="tube-prefix">TRANSIT LINE</span>
+            <h2 id="tube-name-display" class="tube-name">TUBE N9201</h2>
+          </div>
+        </div>
+        <div class="pneumatic-pulse-bar">
+          <div class="pulse-indicator"></div>
+        </div>
+        <p class="tube-caption">Receiving stitched dispatch...</p>
+      </div>
+    </section>
+
+    <!-- STEP 3: "You've received your prescript" - Tap to open stub -->
+    <section id="screen-sealed" class="screen-view hidden">
+      <div class="sealed-content">
+        <h2 class="received-heading">You've received your prescript.</h2>
+
+        <!-- Interactive Sealed Stub with Index Logo in the Red Wax Stamp -->
+        <div id="sealed-stub-target" class="sealed-stub" role="button" tabindex="0" aria-label="Tap to open prescript stub">
+          <div class="stub-stitch-top"></div>
+          <div class="sealed-stub-body">
+            <div class="stub-badge">
+              <span id="sealed-tube-tag" class="stub-tube-tag">TUBE N9201</span>
+            </div>
+            
+            <div class="seal-knot">
+              <div class="wax-seal">
+                <img src="assets/IndexProselytesIcon.webp" alt="The Index" class="seal-logo" />
+              </div>
+              <div class="thread-tie horizontal"></div>
+              <div class="thread-tie vertical"></div>
+            </div>
+
+            <div class="tap-prompt">
+              <span class="tap-icon">&darr;</span>
+              <span class="tap-text">Tap to open stub</span>
+            </div>
+          </div>
+          <div class="stub-stitch-bottom"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 4 & 5: Prescript Message (Only the message. After 7s, 'Return to Weaver' CTA) -->
+    <section id="screen-revealed" class="screen-view hidden">
+      <div class="revealed-content">
+        
+        <!-- Open Prescript Stub: Clean, message only -->
+        <article class="open-stub" id="open-stub-card">
+          <div class="open-stub-body">
+            <p id="revealed-message" class="prescript-text">
+              Visit [Artist Name]'s booth and tell them a tale of how the ocean looks beautiful. Depart immediately without waiting for their response.
+            </p>
+          </div>
+        </article>
+
+        <!-- STEP 5: CTA fades in after exactly 7 seconds -->
+        <div id="weaver-return-container" class="weaver-return-container hidden-cta">
+          <button id="btn-return-weaver" class="btn-return-weaver" type="button">
+            &larr; Return to Weaver
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
